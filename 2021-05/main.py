@@ -5,10 +5,7 @@ with open('input.csv') as f:
 
 def check_if_not_diagonal(coords):
   one, two = coords
-  if one[0] == two[0] or one[1] == two[1]:
-    return True
-  else:
-    return False
+  return one[0] == two[0] or one[1] == two[1]:
 
 def find_change_coord_in_line(coords):
   start, finish = coords
